@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://kit.fontawesome.com/f0e5db6d28.js" crossorigin="anonymous">
+    <link rel="stylesheet"
+    href="https://bootswatch.com/5/slate/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css" /> 
+    <title>My library</title>
+</head>
+<body>
+    <div class="container mt-4">
+    <h1 class="display-5 text-center fw-bold">  
+    My<span class="text-primary">Book</span>List</h1>
+    <form id="book-form">
+
+        <div class="form-group">
+            <label for="title">Book title</label>
+            <input type="text" id="title"
+            class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="author">Book author</label>
+            <input type="text" id="author"
+            class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="number">Number of pages</label>
+            <input type="number" id="number"
+            class="form-control">
+        </div>
+       
+        <div class="form-group">
+            <label class="switch">
+            <input title="read" type="checkbox" id="read" class="form-control" value="no">
+            <div class="slider round"></div>
+            </label>
+        </div>
+
+        <div>
+            <input type="submit" id="newBookBtn" value="Add book"
+            class="btn btn-primary btn-block mt-4 align-content-center">
+        </div>
+    </form>
+
+    <table class="table table-striped mt-5">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Number of pages</th>
+                <th>Book read</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+    </table>
+    </div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
